@@ -73,6 +73,10 @@
                     </ul>
                 </div>
             </div>
+
+            <p class="nav-item pr-3">
+                By: Paolina Ganeva
+            </p>
         </nav>
 
         <main class="py-4">
