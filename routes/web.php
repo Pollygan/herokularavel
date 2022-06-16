@@ -20,5 +20,5 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::view('/home', 'home')->middleware('auth');
+Route::resource('/home', 'home')->middleware('auth');
 Route::resource('products', ProductController::class)->middleware('auth');
