@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <p class="nav-item pr-3">
+            <p>
                 By: Paolina Ganeva
             </p>
         </nav>
