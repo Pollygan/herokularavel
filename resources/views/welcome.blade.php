@@ -46,7 +46,7 @@
                     </svg>
                 </div>
 
-                <a href="{{ route('products.index') }}" class="btn btn-primary">Test here!</a>
+                <a href="{{ route('products.index') }}" class="buttons are-medium button is-link">Test here!</a>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
