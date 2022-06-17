@@ -20,7 +20,7 @@
             <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
         </div>
 
-        <table class="table table-bordered .is-$light">
+        <table class="table table-bordered">
             <tr >
                 <th>Number</th>
                 <th>Name</th>
