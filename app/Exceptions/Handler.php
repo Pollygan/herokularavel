@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use TheSeer\Tokenizer\Exception;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -52,9 +53,6 @@ class Handler extends ExceptionHandler
     public function render($request, Exception|Throwable $exception)
     {
         if ($this->isHttpException($exception)) {
-            if ($exception->getStatusCode() == 404) {
-                return response()->view('errors.' . '404', [], 404);
-            }
             if ($exception->getStatusCode() == 500) {
                 return response()->view('errors.' . '500', [], 500);
             }
