@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h1 style="font-size: 162px; ">404</h1>
+                    <h1 style="font-size: 162px; ">500</h1>
                     <h2>Page Not Found</h2>
                     <p>We are sorry,the page you requested could not be found. Please go to the home page.</p>
                     <a href="/" class="btn btn-primary">Visit Homepage</a>
@@ -21,5 +21,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
 @endsection
-
-
