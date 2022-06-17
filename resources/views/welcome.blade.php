@@ -47,6 +47,7 @@
                 </div>
 
                 <div class="buttons are-medium button is-link">
+                <a href="{{ route('products.index') }}">Test here!</a>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
