@@ -7,9 +7,6 @@
                 <div class="pull-left">
                     <h2>Add New Product</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
-                </div>
             </div>
         </div>
 
@@ -43,6 +40,9 @@
                             <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
                         </label>
                     </div>
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
