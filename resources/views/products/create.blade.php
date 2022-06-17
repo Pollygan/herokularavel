@@ -45,6 +45,7 @@
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
