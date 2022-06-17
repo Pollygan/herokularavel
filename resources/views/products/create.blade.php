@@ -41,7 +41,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
+                <div class="pull-right">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
