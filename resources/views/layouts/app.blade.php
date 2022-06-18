@@ -78,12 +78,12 @@
                     </ul>
                 </div>
             </div>
+
+            <p>
+                By: Paolina Ganeva
+            </p>
+            
         </nav>
-
-        <p>
-            By: Paolina Ganeva
-        </p>
-
         <main class="py-4">
             @yield('content')
         </main>
