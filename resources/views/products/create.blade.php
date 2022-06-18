@@ -15,10 +15,10 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Name:</strong>
+                    <div class="field">
+                        <strong class="label">Name:</strong>
                         <label>
-                            <input type="text" name="name" class="form-control" placeholder="Name">
+                            <input type="text" name="name" class="form-control" placeholder="Text input" data-validation="name">
                         </label>
                     </div>
                 </div>
