@@ -11,10 +11,25 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required  data-parsley-pattern="[a-zA-Z]+$" data-parsley-trigger="keyup" />
+                        </div>
 
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" required data-parsley-trigger="keyup" />
+                        </div>
 
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" id="password" class="form-control" required data-parsley-trigger="keyup" />
+                        </div>
 
-
+                        <div class="form-group">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="text" name="cpassword" id="cpassword" class="form-control" required data-parsley-trigger="keyup" />
+                        </div>
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
