@@ -22,17 +22,17 @@
                         </label>
                     </div>
                 </div>
+
                 <br>
                 <br>
                 
-                 <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Detail:</strong>
                         <label>
                             <textarea class="form-control" style="height:130px" name="detail" placeholder="Detail"></textarea>
                         </label>
                     </div>
-                  </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
