@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-14 col-sm-14 col-md-14">
                     <div class="field">
                         <strong class="label">Detail:</strong>
                         <label>
