@@ -82,7 +82,7 @@
             <p>
                 By: Paolina Ganeva
             </p>
-            
+
         </nav>
         <main class="py-4">
             @yield('content')

@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+<style>
+    .parsley-errors-list li{
+        list-style: none;
+        color: red;
+    }
+</style>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -18,17 +25,17 @@
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" class="form-control" required data-parsley-trigger="keyup" />
+                            <input type="text" name="email" id="email" class="form-control" required data-parsley-type="email" data-parsley-trigger="keyup" />
                         </div>
 
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="text" name="password" id="password" class="form-control" required data-parsley-trigger="keyup" />
+                            <input type="text" name="password" id="password" class="form-control" required data-parsley-length="[8,12]" data-parsley-trigger="keyup" />
                         </div>
 
                         <div class="form-group">
                             <label for="cpassword">Confirm Password</label>
-                            <input type="text" name="cpassword" id="cpassword" class="form-control" required data-parsley-trigger="keyup" />
+                            <input type="text" name="cpassword" id="cpassword" class="form-control" required data-parsley-equelto="#password" data-parsley-trigger="keyup" />
                         </div>
 
                         <div class="row mb-0">
@@ -44,4 +51,10 @@
         </div>
     </div>
 </div>
+
+    <script>
+        $(function(){
+            $("#registerForm").parsley();
+        })
+    </script>
 @endsection
