@@ -14,7 +14,7 @@
             @csrf
 
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
                     <div class="form-group">
                         <strong>Name:</strong>
                         <label>
@@ -25,8 +25,8 @@
 
                 <br>
                 <br>
-                
-                <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
                     <div class="form-group">
                         <strong>Detail:</strong>
                         <label>
