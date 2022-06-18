@@ -1,12 +1,5 @@
 @extends('layouts.app')
 
-<style>
-    .parsley-errors-list li{
-        list-style: none;
-        color: red;
-    }
-</style>
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -51,10 +44,4 @@
         </div>
     </div>
 </div>
-
-    <script>
-        $(function(){
-            $("#registerForm").parsley();
-        })
-    </script>
 @endsection
