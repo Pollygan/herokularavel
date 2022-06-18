@@ -15,11 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::latest()->paginate(5);
-
-        return abort('500');
-//
-//        return view('products.index',compact('products'))
-//            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('products.index',compact('products'))
+           ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -70,7 +67,8 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('products.edit',compact('product'));
+        // return view('products.edit',compact('product'));
+        return abort('500');
     }
 
     /**
