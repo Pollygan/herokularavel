@@ -25,8 +25,6 @@
 
                 @if($errors->all())
                     <div class="alert alert-danger" style="color: red">Please fill in the name of the product</div>
-                @else
-                    <div class="container is-success" >Correct</div>
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
@@ -40,8 +38,6 @@
 
                 @if($errors->all())
                     <div class="alert alert-danger" style="color: red">Please fill in the detail of the product</div>
-                @else
-                    <div class="container is-success" >Correct</div>
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
