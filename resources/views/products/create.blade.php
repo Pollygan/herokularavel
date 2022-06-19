@@ -10,6 +10,17 @@
             </div>
         </div>
 
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form id="demoForm" action="{{ route('products.store') }}" method="POST">
             @csrf
 
@@ -23,10 +34,9 @@
                     </div>
                 </div>
 
-                @if($errors->any())
-                   <input type="text" name="name" class="input is-success" placeholder="Good">
-                 @else
-                  <input type="text" name="name" class="input is-danger" placeholder="The field is required">
+                @if($errors->name())
+                    <div class="alert alert-danger"></div>
+                    <p style="color: red"> Please fill in the name of the product</p>
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
@@ -37,6 +47,11 @@
                         </label>
                     </div>
                 </div>
+
+                @if($errors->detail())
+                    <div class="alert alert-danger"></div>
+                    <p style="color: red"> Please fill in the details of the product</p>
+                @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
