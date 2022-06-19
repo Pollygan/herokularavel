@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class ProductController extends Controller
 {
@@ -38,8 +39,8 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $validateData = $request->validate([
-            'name' => 'required|max:50',
-            'detail' => 'required|max:255',
+            'name' => ['required', 'string', Rule::when(true, ['min:5', 'confirmed'])],
+            'detail' => ['required', 'string', Rule::when(true, ['min:10', 'confirmed'])],
         ]);
 
         Product::create($validateData);
