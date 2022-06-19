@@ -35,8 +35,7 @@
                 </div>
 
                 @if($errors->all())
-                    <div class="alert alert-danger"></div>
-                    <p style="color: red"> Please fill in the name of the product</p>
+                    <div class="container alert-danger" style="color: red">Please fill in the name of the product</div>
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
