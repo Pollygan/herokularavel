@@ -23,12 +23,10 @@
                     </div>
                 </div>
 
-                @if($errors->any()) {
-
+                @if($errors->any())
                    <input type="text" name="name" class="input is-success" placeholder="Good">
-                } @else {
+                 @else
                   <input type="text" name="name" class="input is-danger" placeholder="The field is required">
-                }
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
