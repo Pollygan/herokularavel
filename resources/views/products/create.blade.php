@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                @if($errors->name())
+                @if($errors->all())
                     <div class="alert alert-danger"></div>
                     <p style="color: red"> Please fill in the name of the product</p>
                 @endif
@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                @if($errors->detail())
+                @if($errors->all())
                     <div class="alert alert-danger"></div>
                     <p style="color: red"> Please fill in the details of the product</p>
                 @endif
