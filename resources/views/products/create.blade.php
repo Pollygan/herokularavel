@@ -24,21 +24,21 @@
                 </div>
 
                 @error('name')
-                    <p class="alert is-danger">{{ $errors->first('name') }}</p>
+                    <p class="help is-danger">{{ $errors->first('name') }}</p>
                 @enderror
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
                     <div class="form-group">
                         <strong>Detail</strong>
                         <label>
-                            <textarea class="form-control" style="height:130px" name="detail" placeholder="Fill in the details of the product here"></textarea>
+                            <textarea class="input @error('detail') is-danger @enderror" style="height:130px" name="detail" placeholder="Fill in the details of the product here"></textarea>
                         </label>
                     </div>
                 </div>
 
-{{--                @if($errors->all())--}}
-{{--                    <div class="alert alert-danger" style="color: red">Please fill in the detail of the product</div>--}}
-{{--                @endif--}}
+                @error('detail')
+                  <p class="help is-danger"> {{ $errors->second('detail') }}</p>
+                @enderror
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
