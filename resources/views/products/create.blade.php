@@ -24,7 +24,7 @@
                 </div>
 
                 @error('name')
-                    <p class="help is-danger">{{ $errors->first('name') }}</p>
+                    <p class="alert is-danger">{{ $errors->first('name') }}</p>
                 @enderror
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
