@@ -38,8 +38,8 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|min:1|max:255',
-            'detail' => 'required|min:1|max:255',
+            'name' => 'required|min:2|max:255',
+            'detail' => 'required|min:2|max:255',
         ]);
 
         Product::create($request->all());
