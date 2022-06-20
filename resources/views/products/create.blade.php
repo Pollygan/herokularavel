@@ -18,13 +18,13 @@
                     <div class="form-group">
                         <strong>Name</strong>
                         <label>
-                            <input type="text" name="name" class="form-control" placeholder="Fill in the name here">
+                            <input class="input {{ $errors->has('name') ? 'is-danger' : 'is-success' }}" type="text" name="name" placeholder="Fill in the name here">
                         </label>
                     </div>
                 </div>
 
-                @if($errors->all())
-                    <div class="alert alert-danger" style="color: red">Please fill in the name of the product</div>
+                @if($errors->has('name'))
+                    <p class="help is-danger">{{ $errors->first('name') }}</p>
                 @endif
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
@@ -36,9 +36,9 @@
                     </div>
                 </div>
 
-                @if($errors->all())
-                    <div class="alert alert-danger" style="color: red">Please fill in the detail of the product</div>
-                @endif
+{{--                @if($errors->all())--}}
+{{--                    <div class="alert alert-danger" style="color: red">Please fill in the detail of the product</div>--}}
+{{--                @endif--}}
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>

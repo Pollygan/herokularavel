@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 
 class ProductController extends Controller
 {
@@ -38,12 +37,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $validateData = $request->validate([
-            'name' => ['required', 'string', Rule::when(true, ['min:5', 'confirmed'])],
-            'detail' => ['required', 'string', Rule::when(true, ['min:10', 'confirmed'])],
+        $request->validate([
+            'name' => 'required|min:4|max:100',
+            'detail' => 'required|min:2|max:255',
         ]);
 
-        Product::create($validateData);
+        Product::create($request->all());
 
         return redirect()->route('products.index')
             ->with('success','Product created successfully.');
