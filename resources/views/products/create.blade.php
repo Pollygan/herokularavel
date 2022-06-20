@@ -36,9 +36,9 @@
                     </div>
                 </div>
 
-                @error('detail')
-                  <p class="help is-danger"> {{ $errors->second('detail') }}</p>
-                @enderror
+{{--                @error('detail')--}}
+{{--                  <p class="help is-danger"> {{ $errors->first('detail') }}</p>--}}
+{{--                @enderror--}}
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
