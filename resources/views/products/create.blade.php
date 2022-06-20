@@ -18,7 +18,11 @@
                     <div class="form-group">
                         <strong>Name</strong>
                         <label>
-                            <input class="input @error('name') is-danger @enderror" type="text" name="name" placeholder="Fill in the name here">
+                            <input class="input @error('name') is-danger @enderror"
+                                   type="text"
+                                   name="name"
+                                   placeholder="Fill in the name here"
+                                   value="{{ old('name') }}">
                         </label>
                     </div>
                 </div>
@@ -31,14 +35,18 @@
                     <div class="form-group">
                         <strong>Detail</strong>
                         <label>
-                            <textarea class="input @error('detail') is-danger @enderror" style="height:130px" name="detail" placeholder="Fill in the details of the product here"></textarea>
+                            <textarea class="input @error('detail') is-danger @enderror"
+                                      style="height:130px"
+                                      name="detail"
+                                      placeholder="Fill in the details of the product here"
+                                      value="{{ old('detail') }}"></textarea>
                         </label>
                     </div>
                 </div>
 
-{{--                @error('detail')--}}
-{{--                  <p class="help is-danger"> {{ $errors->first('detail') }}</p>--}}
-{{--                @enderror--}}
+                @error('detail')
+                  <p class="help is-danger"> {{ $errors->first('detail') }}</p>
+                @enderror
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
