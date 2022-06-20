@@ -18,14 +18,14 @@
                     <div class="form-group">
                         <strong>Name</strong>
                         <label>
-                            <input class="input {{ $errors->has('name') ? 'is-danger' : 'is-success' }}" type="text" name="name" placeholder="Fill in the name here">
+                            <input class="input @error('name') is-danger @enderror" type="text" name="name" placeholder="Fill in the name here">
                         </label>
                     </div>
                 </div>
 
-                @if($errors->has('name'))
+                @error('name')
                     <p class="help is-danger">{{ $errors->first('name') }}</p>
-                @endif
+                @enderror
 
                 <div class="col-xs-12 col-sm-12 col-md-12 pt-5">
                     <div class="form-group">
