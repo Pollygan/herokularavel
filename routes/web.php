@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ApiController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +24,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('products', ProductController::class)->middleware('auth');
+Route::get('/api/{id}', [App\Http\Controllers\ApiController::class, 'getInfo'])->name('getInfo');
