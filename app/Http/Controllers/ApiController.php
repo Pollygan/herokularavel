@@ -11,6 +11,6 @@ class ApiController extends Controller
 
         $result = $mySwapiProxy->getData($id);
 
-        print_r($result);
+        echo $result;
     }
 }
