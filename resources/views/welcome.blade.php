@@ -50,6 +50,10 @@
                 <a href="{{ route('products.index') }}">Test here!</a>
                 </div>
 
+                <div class="buttons is-large button is-link">
+                    <a href="{{ route('recipes') }}">Check ingredients!</a>
+                </div>
+
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
